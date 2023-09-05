@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yummy</title>
+    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
+
+    <link href="https://fonts.googleapis.com/css2?family=Alice&family=Black+Ops+One&family=Brawler:wght@400;700&family=Calligraffitti&family=Carter+One&family=DM+Serif+Display&family=Dancing+Script:wght@600&family=Lobster&family=Lobster+Two:wght@400;700&family=Montserrat:wght@200;300;400;500;600;700;800;900&family=Nunito:wght@200;300;400;600;700;800;900;1000&family=Rubik+Dirt&family=Sail&family=Suranna&family=Trade+Winds&display=swap" rel="stylesheet">    <link rel="shortcut icon" href="./img/me.jpg" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/ContactUs.css">
+  </head>
+  <body >
+
+
+    <div class="navbar position-fixed z-3" id="navbar">
+
+      <div class="item d-flex">
+
+        <div class="left text-white p-2 position-relative" id="navLeft">
+          <br><br><br><br>
+          <div class="link m-4 pt-5">
+            <div class="p-2 position-relative s" style="white-space: nowrap;"><a href="search.html" class="text-white text-decoration-none">Search</a></div>
+            <div class="p-2 position-relative c" style="white-space: nowrap;"><a href="category.html" class="text-white text-decoration-none">Category</a></div>
+            <div class="p-2 position-relative a" style="white-space: nowrap;"><a href="area.html" class="text-white text-decoration-none">Area</a></div>
+            <div class="p-2 position-relative i" style="white-space: nowrap;"><a href="Ingredients.html" class="text-white text-decoration-none">Ingredients</a></div>
+            <div class="p-2 position-relative co" style="white-space: nowrap;"><a href="ContactUs.html" class="text-white text-decoration-none">Contact Us</a></div>
+          </div>
+
+          <div class="position-absolute bottom-0 start-50 translate-middle-x">
+            <span>
+              <i class="fa-brands fa-facebook" style="cursor: pointer;"></i>
+              <i class="fa-brands fa-twitter" style="cursor: pointer;"></i>
+              <i class="fa-solid fa-globe" style="cursor: pointer;"></i>
+            </span>
+            <p style="white-space: nowrap;">Copyright Â© 2019 All Rights<br>
+              Reserved.
+              
+              </p>
+          </div>
+        </div>
+
+
+
+
+
+        <div class="right d-flex justify-content-between align-items-center flex-column">
+          <img src="./img/logo.png" class="w-75 mt-4" alt="logo">
+          <span  style="cursor: pointer;position: relative;" id="menu" class="mb-5 "><i class="fa-solid fa-bars fs-1 bar position-absolute top-50 start-50 translate-middle-x "></i><i class="fa-solid fa-x fs-1 cross position-absolute top-50 start-50 translate-middle-x "></i></span>
+          <span class="d-flex flex-column">
+            <i class="fa-solid fa-globe my-1" style="cursor: pointer;"></i>
+            <i class="fa-solid fa-share-nodes my-1" style="cursor: pointer;"></i>
+          </span>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+    <div class="container inpo">
+        <form >
+        <div class="row justify-content-center align-items-center" style="min-height: 30vh;">
+            <div class="col-md-6">
+                <input type="text" class=" form-control w-75 m-auto" placeholder="Enter Your Name" oninput="regexName()" id="nameRgx">
+                <div class="alert alert-danger w-75 m-auto opacity-0" id="resultName">Special characters and numbers not allowed</div>
+            </div>
+            <div class="col-md-6">
+                <input type="email" class=" form-control w-75 m-auto" placeholder="Enter Your Email" oninput="regexEmail()" id="emailRgx">
+      <div class="alert alert-danger w-75 m-auto opacity-0" id="resultEmail">Email not valid *exemple@yyy.zzz</div>
+
+            </div>
+            <div class="col-md-6">
+                <input type="text" class=" form-control w-75 m-auto" placeholder="Enter Your Phone" oninput="regexPhone()" id="phoneRgx">
+                 <div class="alert alert-danger w-75 m-auto opacity-0" id="resultPhone">Enter valid Phone Number</div>
+
+            </div>
+            <div class="col-md-6">
+                <input type="text" class=" form-control w-75 m-auto" placeholder="Enter Your Age" oninput="regexAge()" id="ageRgx">
+                                <div class="alert alert-danger w-75 m-auto opacity-0" id="resultAge">Enter valid age</div>
+
+            </div>
+            <div class="col-md-6">
+                <input type="password" class=" form-control w-75 m-auto" placeholder="Enter Your Password" oninput="regexPass()" id="passRgx">
+                                <div class="alert alert-danger w-75 m-auto opacity-0" id="resultPass">Enter valid password *Minimum eight characters, at least one letter and one number:*</div>
+
+            </div>
+            <div class="col-md-6">
+                <input type="password" class=" form-control w-75 m-auto" placeholder="Repassword" oninput="regexRePass()" id="rePassRgx">
+                                <div class="alert alert-danger w-75 m-auto opacity-0" id="resultRePass">Enter valid repassword</div>
+
+            </div>
+          
+        </div>
+        <button class="d-block btn btn-outline-danger m-auto " type="submit" id="submit">Submit</button>
+    </form>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+<script src="./js/bootstrap.bundle.js"></script>
+<script src="./js/code.jquery.com_jquery-3.7.0.min.js" types="../@types/jquery"></script>
+    <script src="js/ContactUs.js"></script>
+    </body>
+    </html>
+    
